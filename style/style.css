@@ -18,36 +18,37 @@
     padding: 0px;
     margin: 0px;
 }
-
 a{
     text-decoration: none;
-    color: black;
+    color: var(--cor5);
 }
-a:hover{
-    text-decoration: underline;
+
+body{
+    background-image: url("../img/fundoazul.png");
 }
 
 nav{
+    margin: auto;
+    max-width: 500px;
     background-color: var(--cor5);
-    padding: 10px;
+    padding: 10px 0px;
     text-align: center;
 }
 nav > a{
-
     color: var(--cor1);
     padding: 10px;
     border-radius: 5px;
     font-weight: bold;
     transition-duration: .5s;
-
 }
 nav > a:hover{
-
     background-color: var(--cor3);
-    color: var(--cor5);
-
 }
 
+section{
+    margin: auto;
+    max-width: 500px;
+}
 section>p{
     padding: 10px;
     text-align: justify;
@@ -72,7 +73,6 @@ section.sobre{
 section.artigo{
     background-color: var(--cor3);
 }
-
 footer{
     background-color: var(--cor4);
     color: var(--cor1);
