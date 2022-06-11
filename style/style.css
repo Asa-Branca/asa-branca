@@ -8,6 +8,14 @@
     --cor3: #2fa866;
     --cor4: #1a5c37;
     --cor5: #063d1e;
+    
+    --corlogo1: #3264A6;
+    --corlogo2: #93D94E;
+    --corlogo3: #F2E635;
+    --corlogo4: #F2D4AE;
+    --corlogo5: #D96A29;
+
+    --corfundo: #0095e9; 
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque:  'Bebas Neue', 'cursive';
@@ -24,13 +32,18 @@ a{
 }
 
 body{
-    background-image: url("../img/fundoazul.png");
+    background-color: var(--corfundo);
+    background-image: url("../img/Asa\ Branca\ Site.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: local;
 }
 
 nav{
     margin: auto;
     max-width: 500px;
-    background-color: var(--cor5);
+    /*background-color: var(--cor5);*/
     padding: 10px 0px;
     text-align: center;
 }
@@ -62,19 +75,19 @@ section>h2{
     text-indent: 30px;
 }
 section.apresentacao{
-    background-color: var(--cor0);
+    background-color:rgba(255, 255, 255, 0);
 }
 section.jogos{
-    background-color: var(--cor1);
+    background-color: rgba(255, 255, 255, 0);
 }
 section.sobre{
-    background-color: var(--cor2);
+    background-color: rgba(255, 255, 255, 0);
 }
 section.artigo{
-    background-color: var(--cor3);
+    background-color: rgba(255, 255, 255, 0);
 }
 footer{
-    background-color: var(--cor4);
+    background-color: var(--corlogo1);
     color: var(--cor1);
     text-align: center;
     font-weight: bold;
