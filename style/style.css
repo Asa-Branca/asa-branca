@@ -86,6 +86,7 @@ section{
     max-width: 500px;
     min-height: 200px;
 }
+
 section>p{
     padding: 10px;
     text-align: justify;
