@@ -102,23 +102,51 @@ section>h1{
 section>h2{
     text-indent: 30px;
     font-family: var(--fonte-pixel2);
-
+    
 }
 section.apresentacao{
     background-color:rgba(255, 255, 255, 0);
     background-image: url("../img/bannerp.png");
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.500);
 }
 section.jogos{
+    margin-top: 25px;
     background-color: rgba(255, 255, 255, 0);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.500);
 }
 section.sobre{
+    margin-top: 25px;
     background-color: rgba(255, 255, 255, 0);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.500);
 }
 section.artigo{
+    margin-top: 25px;
     background-color: rgba(255, 255, 255, 0);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.500);
 }
+.conteudo{
+    display: table;
+}
+.imagem{
+    display: table-cell;
+    float: left;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+.texto{
+    display: table-cell;
+    float: left;
+    width: 200px;
+    margin-top: 25px;
+    margin-left: 25px;
+    text-indent: 25px;
+}
+
 footer{
+    margin-top: 25px;
     background-color: var(--corlogo1);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.500);
     color: var(--cor1);
     text-align: center;
     font-weight: bold;
