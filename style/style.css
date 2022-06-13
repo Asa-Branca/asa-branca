@@ -90,6 +90,7 @@ section>p{
     padding: 10px;
     text-align: justify;
     text-indent: 20px;
+    font-family: var(--fonte-pixel1);
 }
 section>h1{
     padding: 10px;
