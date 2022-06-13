@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+
+
 :root{
 
     --cor0: #c5ebd6;
@@ -61,6 +63,7 @@ nav > a:hover{
 section{
     margin: auto;
     max-width: 500px;
+    min-height: 200px;
 }
 section>p{
     padding: 10px;
@@ -69,6 +72,7 @@ section>p{
 }
 section>h1{
     padding: 10px;
+    text-align: center;
     text-indent: 20px;
 }
 section>h2{
@@ -76,6 +80,7 @@ section>h2{
 }
 section.apresentacao{
     background-color:rgba(255, 255, 255, 0);
+    background-image: url("../img/bannerp.png");
 }
 section.jogos{
     background-color: rgba(255, 255, 255, 0);
