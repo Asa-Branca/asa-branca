@@ -1,6 +1,20 @@
 @charset "UTF-8";
 
+/*Fonte Bebas*/
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/*Fonte VT323*/
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+/*Fonte PressStart2P*/
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@font-face{
+
+    font-family: 'Retro-Gaming';
+    src: url('../fonts/Retro\ Gaming.ttf') format('opentype');
+    font-weight: normal;    
+
+}
+
 
 :root{
 
@@ -21,8 +35,9 @@
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-subtitle: 'Bebas Neue', cursive;
-    --fonte-android: 'Android', 'cursive';
-
+    --fonte-pixel1: 'VT323', monospace;
+    --fonte-pixel2: 'Press Start 2P', cursive;
+    --fonte-pixel3: 'Retro-Gaming', cursive;
 }
 *{
     padding: 0px;
@@ -31,6 +46,12 @@
 a{
     text-decoration: none;
     color: var(--cor5);
+}
+abbr{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
 }
 
 body{
@@ -74,10 +95,11 @@ section>h1{
     padding: 10px;
     text-align: center;
     text-indent: 20px;
+    font-family: var(--fonte-pixel3);
 }
 section>h2{
     text-indent: 30px;
-    font-family: var(--fonte-subtitle);
+    font-family: var(--fonte-pixel2);
 
 }
 section.apresentacao{
