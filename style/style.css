@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 :root{
 
@@ -20,7 +20,7 @@
     --corfundo: #0095e9; 
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
-    --fonte-destaque:  'Bebas Neue', 'cursive';
+    --fonte-subtitle: 'Bebas Neue', cursive;
     --fonte-android: 'Android', 'cursive';
 
 }
@@ -77,6 +77,8 @@ section>h1{
 }
 section>h2{
     text-indent: 30px;
+    font-family: var(--fonte-subtitle);
+
 }
 section.apresentacao{
     background-color:rgba(255, 255, 255, 0);
