@@ -52,6 +52,7 @@ abbr{
 }
 ul{
     list-style-type: none;
+    margin-left: 25px;
 }
 
 body{
@@ -65,14 +66,14 @@ body{
 
 nav{
     margin: auto;
-    max-width: 500px;
     /*background-color: var(--cor5);*/
-    padding: 10px 0px;
+    /*padding: 10px 35px;*/
     text-align: center;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.500);
+    
 }
 nav > a{
     color: var(--cor1);
-    padding: 10px;
     border-radius: 5px;
     font-weight: bold;
     transition-duration: .5s;
@@ -80,13 +81,45 @@ nav > a{
 nav > a:hover{
     background-color: var(--cor3);
 }
+nav.conteudo{
+    display: table;
+    width: 500px;
+}
+
+nav>picture.imagem{
+    display: table-cell;
+    float: left;
+    padding: 0px;
+}
+nav>a.texto{
+    margin-top: 15px;
+    display: inline-table;
+    float: center;
+    padding: 10px 20px 10px 20px;
+    text-indent: none;
+    min-width: 10px;
+}
+/*
+nav>a.texto{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: -50px;
+    margin-right: -50px;
+    text-indent: none;
+    min-width: 10px;
+}
+nav>picture.imagem{
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+*/
 
 section{
     margin: auto;
     max-width: 500px;
     min-height: 200px;
 }
-
 section>p{
     padding: 10px;
     text-align: justify;
@@ -105,6 +138,7 @@ section>h2{
     
 }
 section.apresentacao{
+    margin-top: 25px;
     background-color:rgba(255, 255, 255, 0);
     background-image: url("../img/bannerp.png");
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.500);
@@ -124,12 +158,28 @@ section.artigo{
     background-color: rgba(255, 255, 255, 0);
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.500);
 }
-ul{
-    margin-left: 25px;
-}
+
 .conteudo{
     display: table;
 }
+section>div.conteudo>picture.imagem{
+    display: table-cell;
+    float: left;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+section>div.conteudo>p.texto{
+    display: table-cell;
+    float: left;
+    width: 200px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    text-indent: 30px;
+
+}
+/*
 .imagem{
     display: table-cell;
     float: left;
@@ -145,7 +195,7 @@ ul{
     margin-left: 25px;
     text-indent: 25px;
 }
-
+*/
 footer{
     margin-top: 25px;
     background-color: var(--corlogo1);
