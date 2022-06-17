@@ -15,9 +15,8 @@
 
 }
 
-
 :root{
-
+    --cor: #c5ebd641;
     --cor0: #c5ebd6;
     --cor1: #83e1ad;
     --cor2: #3ddc84;
@@ -39,41 +38,46 @@
     --fonte-pixel2: 'Press Start 2P', cursive;
     --fonte-pixel3: 'Retro-Gaming', cursive;
 }
+
 *{
     padding: 0px;
     margin: 0px;
 }
+
 a{
     text-decoration: none;
-    color: var(--cor5);
 }
-abbr{
-    text-decoration: none;
-}
-ul{
-    list-style-type: none;
-    margin-left: 25px;
-}
-
 body{
-    background-color: var(--corfundo);
     background-image: url("../img/Asa\ Branca\ Site.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: local;
+    background-position: center ;
+    background-repeat: repeat-x ;
+    background-size: contain;
+    background-attachment: fixed;
+}
+body.home{
+    background-color: var(--cor0);
+}
+body.artigos{
+    background-color: var(--cor1);
+}
+body.sobre{
+    background-color: var(--cor2);
+}
+body.jogos{
+    background-color: var(--cor3);
+}
+body.copy{
+    background-color: var(--cor4);
 }
 
 nav{
     margin: auto;
-    /*background-color: var(--cor5);*/
-    /*padding: 10px 35px;*/
     text-align: center;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.500);
-    
+    width: 500px;
 }
 nav > a{
-    color: var(--cor1);
+    color: var(--corlogo1);
     border-radius: 5px;
     font-weight: bold;
     transition-duration: .5s;
@@ -85,91 +89,98 @@ nav.conteudo{
     display: table;
     width: 500px;
 }
-
-nav>picture.imagem{
+nav > picture.imagem{
     display: table-cell;
     float: left;
-    padding: 0px;
 }
-nav>a.texto{
+nav > a.texto{
     margin-top: 15px;
     display: inline-table;
     float: center;
     padding: 10px 20px 10px 20px;
     text-indent: none;
-    min-width: 10px;
-}
-/*
-nav>a.texto{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: -50px;
-    margin-right: -50px;
-    text-indent: none;
-    min-width: 10px;
-}
-nav>picture.imagem{
-    margin-top: 15px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-}
-*/
 
-section{
-    margin: auto;
-    max-width: 500px;
-    min-height: 200px;
 }
-section>p{
-    padding: 10px;
-    text-align: justify;
-    text-indent: 20px;
-    font-family: var(--fonte-pixel1);
-}
-section>h1{
-    padding: 10px;
-    text-align: center;
-    text-indent: 20px;
-    font-family: var(--fonte-pixel3);
-}
-section>h2{
-    text-indent: 30px;
-    font-family: var(--fonte-pixel2);
-    
-}
-section.apresentacao{
-    margin-top: 25px;
-    background-color:rgba(255, 255, 255, 0);
-    background-image: url("../img/bannerp.png");
+
+main{
+    margin: 0 auto;
+    width: 500px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.500);
 }
-section.jogos{
+
+
+
+section.apresentacao{
     margin-top: 25px;
-    background-color: rgba(255, 255, 255, 0);
+    background-color:var(--cor0);
+    background-image: url("../img/bannerg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: local;
+    padding: 100px 50px;
+    text-align: center;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.500);
+}
+section.projetos{
+    margin-top: 25px;
+    background-color:var(--cor);
+    padding: 25px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.500);
 }
 section.sobre{
     margin-top: 25px;
-    background-color: rgba(255, 255, 255, 0);
+    background-color:var(--cor);
+    padding: 25px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.500);
 }
-section.artigo{
+section.sobre > p{
+    text-indent: 25px;
+    text-align: justify;
+}
+section.artigos{
     margin-top: 25px;
-    background-color: rgba(255, 255, 255, 0);
+    background-color:var(--cor);
+    padding: 25px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.500);
 }
-
+section.artigos > p{
+    text-indent: 25px;
+    text-align: justify;
+}
+section > h1{
+    text-align: center;   
+}
+ul{
+    list-style-type: none;
+}
 .conteudo{
     display: table;
 }
-section>div.conteudo>picture.imagem{
+ul > div.conteudo > picture.imagem{
     display: table-cell;
     float: left;
     margin-top: 25px;
     margin-left: 25px;
     margin-bottom: 25px;
 }
-section>div.conteudo>p.texto{
+ul > div.conteudo > li.texto{
+    display: table-cell;
+    float: left;
+    width: 200px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+
+}
+div.conteudo>picture.imagem{
+    display: table-cell;
+    float: left;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+div.conteudo>p.text{
     display: table-cell;
     float: left;
     width: 200px;
@@ -177,32 +188,18 @@ section>div.conteudo>p.texto{
     margin-left: 25px;
     margin-bottom: 25px;
     text-indent: 30px;
+    text-align: justify;
+}
 
-}
-/*
-.imagem{
-    display: table-cell;
-    float: left;
-    margin-top: 25px;
-    margin-left: 25px;
-    margin-bottom: 25px;
-}
-.texto{
-    display: table-cell;
-    float: left;
-    width: 200px;
-    margin-top: 25px;
-    margin-left: 25px;
-    text-indent: 25px;
-}
-*/
 footer{
     margin-top: 25px;
-    background-color: var(--corlogo1);
+    background-color: var(--cor1);
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.500);
-    color: var(--cor1);
+    color: var(--corlogo1);
     text-align: center;
     font-weight: bold;
-    padding: 10px;
-    
+    padding: 10px;    
+}
+footer > p{
+    text-align: left;
 }
