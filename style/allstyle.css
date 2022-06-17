@@ -69,6 +69,9 @@ body.jogos{
 body.copy{
     background-color: var(--cor4);
 }
+body.termos{
+    background-color: var(--corfundo);
+}
 
 nav{
     margin: auto;
@@ -148,6 +151,25 @@ section.artigos > p{
     text-indent: 25px;
     text-align: justify;
 }
+section.termos{
+    padding: 25px;
+    margin-top: 25px;
+    background-color: var(--cor);
+}
+section.termos > h1,h2{
+    padding: 25px;
+    text-align: center;
+}
+section.termos >h3, p{
+    padding: 5px;
+    text-indent: 25px;
+    text-align: justify;
+}
+section.termos > ul{
+    padding: 25px;
+    list-style-type: decimal;
+}
+
 section > h1{
     text-align: center;   
 }
