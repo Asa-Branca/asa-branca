@@ -115,7 +115,7 @@ main{
 
 section.apresentacao{
     margin-top: 25px;
-    background-color:var(--cor0);
+    background-color:var(--cor);
     background-image: url("../img/bannerg.png");
     background-position: center center;
     background-repeat: no-repeat;
@@ -125,13 +125,17 @@ section.apresentacao{
     text-align: center;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.500);
 }
+
+.apresentacao > p{
+    text-align: center;
+}
 section.projetos{
     margin-top: 25px;
     background-color:var(--cor);
     padding: 25px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.500);
 }
-section.sobre{
+    section.sobre{
     margin-top: 25px;
     background-color:var(--cor);
     padding: 25px;
